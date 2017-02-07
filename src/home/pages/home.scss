@@ -1,0 +1,10 @@
+$translate-amount: 100px;
+$rotate-amount: 30deg;
+
+.foo {
+  display: flex;
+  transform: translate($translate-amount) rotate($rotate-amount);
+  transform-origin: 0 0;
+  color: #fff;
+  background: #c00;
+}
