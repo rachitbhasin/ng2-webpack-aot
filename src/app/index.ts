@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeModule } from 'src/home';
+import { HomeModule } from './components/home';
 import { AppComponent } from './components/app';
 
 

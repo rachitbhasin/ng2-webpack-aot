@@ -36,7 +36,8 @@ const rules = {
   },
   html: {
     test: /\.html$/,
-    use: ['raw']
+    use: ['html-loader'],
+    include: path.resolve('src')
   },
   sass: {
     test: /\.scss$/,
@@ -64,10 +65,23 @@ config.resolve = {
   ]
 };
 
+config.performance = {
+    hints : false
+}
+
+config.stats = {
+  chunks: true,
+  // Add built modules information to chunk information
+  chunkModules: true,
+  // Add the origins of chunks and chunk merging info
+  chunkOrigins: true,
+}
+
 config.module = {
   rules: [
     rules.sass,
-    rules.typescript
+    rules.typescript,
+    rules.html
   ]
 };
 
