@@ -30,26 +30,25 @@ const PORT = 3000;
 //  RULES
 //---------------------------------------------------------
 const rules = {
-  css: {
+  'css': {
     test: /\.css$/,
     use: ['raw', 'postcss']
   },
-  html: {
+  'html': {
     test: /\.html$/,
     use: ['html-loader'],
     include: path.resolve('src')
   },
-  sass: {
+  'sass': {
     test: /\.scss$/,
     use: ['raw-loader', 'postcss-loader', 'sass-loader'],
     include: path.resolve('src')
   },
-  typescript: {
+  'typescript': {
     test: /\.ts$/,
     use: ['awesome-typescript-loader', 'angular2-template-loader']
   }
 };
-
 
 //=========================================================
 //  CONFIG
@@ -67,14 +66,6 @@ config.resolve = {
 
 config.performance = {
     hints : false
-}
-
-config.stats = {
-  chunks: true,
-  // Add built modules information to chunk information
-  chunkModules: true,
-  // Add the origins of chunks and chunk merging info
-  chunkOrigins: true,
 }
 
 config.module = {
@@ -110,6 +101,7 @@ config.plugins = [
 //  DEVELOPMENT or PRODUCTION
 //-------------------------------------
 if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
+  
   config.entry = {
     polyfills: './src/polyfills.ts'
   };
@@ -146,6 +138,7 @@ if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
 //  DEVELOPMENT
 //-------------------------------------
 if (ENV_DEVELOPMENT) {
+
   config.devtool = 'cheap-module-source-map';
 
   config.entry.main = './src/main.jit.ts';
@@ -178,6 +171,7 @@ if (ENV_DEVELOPMENT) {
 //  PRODUCTION
 //-------------------------------------
 if (ENV_PRODUCTION) {
+
   config.devtool = 'source-map';
 
   config.entry.main = './src/main.aot.ts';

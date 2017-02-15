@@ -1,5 +1,5 @@
 import { platformBrowser } from '@angular/platform-browser';
-import { AppModuleNgFactory } from '../build/src/app/index.ngfactory';
+import { AppModuleNgFactory } from '../build/src/app/app.module.ngfactory';
 
 
 document.addEventListener('DOMContentLoaded', () => {

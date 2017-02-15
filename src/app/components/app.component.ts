@@ -3,10 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <nav-bar></nav-bar>
-
-    <router-outlet></router-outlet>
-  `
+  styleUrls: ['app.scss'],
+  templateUrl: 'app.html'
 })
 export class AppComponent {}

@@ -1,6 +1,3 @@
-[![CircleCI](https://circleci.com/gh/r-park/angular-aot.svg?style=shield&circle-token=9072e0fa456002a4c0480d5c902da45bb11bf614)](https://circleci.com/gh/r-park/angular-aot)
-
-
 # Angular Ahead-of-Time (AoT) Compilation
 
 A minimal example using the Angular compiler cli to pre-compile component templates.
