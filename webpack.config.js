@@ -82,7 +82,6 @@ config.plugins = [
   }),
   new LoaderOptionsPlugin({
     debug: false,
-    minimize: ENV_PRODUCTION,
     options: {
       postcss: [
         autoprefixer({browsers: ['last 3 versions']})
