@@ -1,11 +1,11 @@
-$translate-amount: 100px;
-$rotate-amount: 30deg;
+$translate-amount: 10px;
+$rotate-amount: 5deg;
 
 .foo {
     display: flex;
-    transform: translate($translate-amount) rotate($rotate-amount);
+    transform: rotate($rotate-amount);
     transform-origin: 0 0;
     color: #fff;
-    background: #c00;
-    padding-left: 20%;
+    background: #0c0;
+    justify-content: center;
 }
